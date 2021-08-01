@@ -1,3 +1,20 @@
+.navbar {
+  background: rgba(40, 40, 40, 0.20) !important;
+  z-index: 2;
+  backdrop-filter: blur(10px) saturate(125%);
+  -webkit-backdrop-filter: blur(15px) saturate(125%);
+  height: 5rem;
+  margin-top: 15px;
+  margin-left: 50px;
+  margin-right: 50px;
+  border-radius: 25px;
+}
+
+.image {
+  // border-radius: 7.5px;
+  margin-left: 30px;
+}
+
 #hero {
   min-height: 100vh;
   height: 100vh;
