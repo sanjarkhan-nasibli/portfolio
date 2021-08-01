@@ -1,5 +1,5 @@
 .footer {
-  background-color: $dark-grey;
+  background-color: $white-color;
   color: $white-color;
   padding: 2.4rem 0;
 
@@ -8,16 +8,15 @@
   }
 
   &__text {
-    color: darken($white-color, 50%);
-    font-size: 1.3rem;
-    padding-top: 2.4rem;
+    color: $dark-blue-text;
+    font-size: 1.5rem;
+    padding-top: 1.3rem;
 
     a {
-      color: darken($white-color, 50%);
-      font-size: 1.3rem;
+      color: $dark-blue-text;
+      font-size: 1.5rem;
       transition: all 0.4s;
       display: inline-block;
-      background-color: $dark-grey;
 
       &:hover,
       &:active {
@@ -28,12 +27,12 @@
     }
   }
 
-  & hr {
-    margin: 1rem auto;
-    border: 0;
-    width: 50%;
-    border-top: 2px solid grey;
-  }
+  // & hr {
+  //   margin: 1rem auto;
+  //   border: 0;
+  //   width: 50%;
+  //   border-top: 2px solid grey;
+  // }
 }
 
 .social-links {
@@ -48,7 +47,7 @@
     color: $white-color;
     font-size: 3rem;
     width: 5rem;
-    height: 5rem;
+    height: 1.5rem;
     margin: $default-font-size $default-font-size;
     transition: all 0.2s ease-in;
 
@@ -59,7 +58,7 @@
 }
 
 .back-to-top i {
-  color: $white-color;
+  color: $dark-blue-text;
   margin: 1rem 0 $default-font-size;
   transition: all 0.2s ease-in;
 
