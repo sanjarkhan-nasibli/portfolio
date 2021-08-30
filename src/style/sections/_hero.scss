@@ -15,6 +15,53 @@
 //   margin-left: 30px;
 // }
 
+#mainNav {
+  padding-top: 3rem;
+  font-family: Montserrat, sans-serif; 
+  background: rgba(255, 255, 255, 0);
+}
+
+.fa, .fab, .fad, .fal, .far, .fas {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+}
+
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: x-large;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.navbar-toggler {
+  border-style: none;
+  padding: 0.25rem 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: transparent;
+  transition: box-shadow 0.15s ease-in-out;
+}
+
+.navbar-nav ms-auto {
+  color: $dark-blue-text;
+}
+
+a.nav-link {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  padding-left: 15px;
+}
+
 #hero {
   min-height: 100vh;
   height: 100vh;
@@ -70,6 +117,7 @@
     font-weight: 700;
     margin-bottom: 3.2rem;
     text-align: left;
+    margin-top: -165px;
 
     @include respond(tab-land) {
       font-size: 4rem;
