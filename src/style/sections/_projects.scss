@@ -1,6 +1,6 @@
 #projects {
-  background-color: $white-color;
-  color: $dark-blue-text;
+  background-color: black;
+  color: white;
   margin-top: -10rem;
   padding-top: 15rem;
 
@@ -9,58 +9,59 @@
     padding-top: 5rem;
   }
 
-  .project-wrapper {
-    margin-bottom: 12.5rem;
+.project-wrapper {
+  margin-bottom: 12.5rem;
+
+  @include respond(phone) {
+    margin-bottom: 0rem;
+  }
+
+.fab {
+  padding-bottom: 12.5px;
+  }
+
+.row {
+  margin-bottom: 8rem;
+
+  @include respond(phone) {
+      margin-bottom: 4rem;
+  }
+}
+
+  &__text {
+    cursor: default;
+    text-align: left;
 
     @include respond(phone) {
-      margin-bottom: 0rem;
+       margin-bottom: 2.5rem !important;
+    }
+    @include respond(tab-land) {
+      margin-bottom: 4.8rem;
     }
 
-    .fab {
-      padding-bottom: 12.5px;
-    }
-
-    .row {
-      margin-bottom: 8rem;
+    &-title {
+      font-weight: bold;
+      margin-bottom: 1.8rem;
+      font-size: $mid-font-size;
 
       @include respond(phone) {
-        margin-bottom: 4rem;
+        font-size: 2rem;
       }
     }
 
-    &__text {
-      text-align: left;
-
-      @include respond(phone) {
-        margin-bottom: 2.5rem !important;
-      }
-      @include respond(tab-land) {
-        margin-bottom: 4.8rem;
-      }
-
-      &-title {
-        font-weight: bold;
-        margin-bottom: 1.8rem;
-        font-size: $mid-font-size;
-
-        @include respond(phone) {
-          font-size: 2rem;
-        }
-      }
-
-      & p > a {
-        color: $secondary-color;
-      }
+    & p > a {
+      color: $secondary-color;
     }
+  }
 
-    &__image {
-      width: 90%;
-      margin: 0 auto;
+  &__image {
+    width: 90%;
+    margin: 0 auto;
 
-      @include respond(tab-land) {
-        width: 100%;
-        margin: 0;
-      }
+    @include respond(tab-land) {
+      width: 100%;
+      margin: 0;
+    }
 
       & .thumbnail {
         border: none;

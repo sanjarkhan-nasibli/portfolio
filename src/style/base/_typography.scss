@@ -23,19 +23,45 @@ a:hover {
 }
 
 .section-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  cursor: default;
+  color: white!important;
   margin: 0px;
-  margin-bottom: 4.5rem;
+  margin-bottom: 6rem;
   font-size: $big-font-size;
   font-weight: bold;
-  text-transform: lowercase;
 
   @include respond(phone) {
     font-size: 2.8rem;
+    margin-bottom: 4.5rem;
+  }
+}
+
+.section-title-tech {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  cursor: default;
+  color: white!important;
+  margin: 0px;
+  margin-bottom: 6rem;
+  font-size: $big-font-size;
+  font-weight: bold;
+  padding-top: 3rem;
+
+  @include respond(phone) {
+    font-size: 2.8rem;
+    padding-top: 0;
+    margin-bottom: 4.5rem;
   }
 }
 
 .dark-blue-text {
-  color: $dark-blue-text !important;
+  color: $dark-blue-text;
 }
 
 .text-color-main {

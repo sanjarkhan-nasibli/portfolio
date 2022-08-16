@@ -28,7 +28,7 @@ module.exports = {
       },
     ],
   },
-  // This config allows to use jQuery $ sign
+  
   plugins: [
     new Webpack.ProvidePlugin({
       $: "jquery",

@@ -6,5 +6,5 @@ import resume from "../assets/resume.pdf";
 export default function initApp() {
   initSr();
   initTilt();
-  // addResume(resume);
+  addResume(resume);
 }
