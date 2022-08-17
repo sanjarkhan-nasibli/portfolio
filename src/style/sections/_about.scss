@@ -54,7 +54,7 @@
     &__info {
       display: flex;
       height: 100%;
-      width: 85%;
+      width: 95%;
       justify-content: center;
       flex-direction: column;
       margin-left: -20rem;
@@ -83,7 +83,7 @@
       &-text {
         cursor: default;
         text-align: left;
-        font-size: 2rem;
+        font-size: 2.3rem;
 
         @include respond(tab-port) {
           text-align: left;
